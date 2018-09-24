@@ -2,12 +2,15 @@
 
 int main()
 {
-	int n;
+	int n, a, z=0, k;
 	scanf("%i", &n);
-	int r = n%10;
-	if(r<5) {
-		printf("%i\n", (n-r)/5);
-	}else{
-		printf("%i\n", (n-(r-5))/5);
+	for(a=1; a<=n; a++) {
+		k=a;
+		while((a%5)==0);
+		z++;
+		a = a/5;
+		}
+		a=k; 
 	}
+	printf("%i\n", z);
 }
