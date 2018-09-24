@@ -1,9 +1,7 @@
-PROGRAM= area
+run: fact
+	./fact
 
-run: ${PROGRAM}
-    ./${PROGRAM}
+fact: fact.c
+	gcc -Wall -std=c11 fact.c -o fact
 
-${PROGRAM}: ${PROGRAM}.c
-    gcc -Wall -std=c11 ${PROGRAM}.c -o ${PROGRAM}
-
-build: ${PROGRAM}
+build: fact
