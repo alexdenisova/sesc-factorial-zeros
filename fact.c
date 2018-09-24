@@ -6,9 +6,9 @@ int main()
 	scanf("%i", &n);
 	for(a=1; a<=n; a++) {
 		k=a;
-		while((a%5)==0);
-		z++;
-		a = a/5;
+		while((a%5)==0){
+			z++;
+			a = a/5;
 		}
 		a=k; 
 	}
